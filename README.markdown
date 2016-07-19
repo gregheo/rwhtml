@@ -20,7 +20,12 @@ filename parameter, and outputs to `stdout` like your standard Unix utility.
     $ ruby rwhtml.rb my-other-tutorial.markdown > my-other-tutorial.html
 
 You can then inspect the output HTML and copy & paste it into the WordPress
-editor.
+editor. Or if you’re feeling lucky:
+
+    $ ruby rwhtml.rb my-tutorial.markdown | pbcopy
+
+There’s a macOS command line trick for you: `pbcopy` will put the text right
+into the pasteboard, ready to be pasted.
 
 ## Limitations
 
