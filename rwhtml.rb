@@ -70,6 +70,7 @@ end
 
 renderer = Redcarpet::Render::RWHTML.new(escape_html: false)
 markdown = Redcarpet::Markdown.new(renderer,
-  no_intra_emphasis: false, fenced_code_blocks: true, strikethrough: true)
+  no_intra_emphasis: false, fenced_code_blocks: true, strikethrough: true,
+  tables: true)
 STDOUT.write markdown.render(ARGF.read)
 
